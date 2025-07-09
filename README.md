@@ -1,101 +1,76 @@
+# 🏏 IPL Match Winning Prediction
 
-# 🏏 IPL Match Winner Prediction Using Logistic Regression
-
-This project aims to predict the winning probability of IPL teams during a match using **Logistic Regression**. It was executed as a **college project** under the guidance of **Prof. Dr. Mansi Gyanchandani (NIT Bhopal)** and achieved an **accuracy of 80.3%**.
+This project predicts the winning probability of IPL teams during a match using **Logistic Regression and Random Forest**. It was executed as a **college project** under the guidance of **Prof. Dr. Mansi Gyanchandani (NIT Bhopal)**. Initially, the model achieved an accuracy of **80.22%**, which was later improved to **99.82%** through optimization and better Algorithm.
 
 ---
 
 ## 📌 Project Highlights
 
 - Predicts **real-time winning probabilities** of IPL teams.
-- Utilizes **Logistic Regression**, a supervised machine learning algorithm.
-- Accuracy achieved: **80.3%**
-- Clean code for data processing, modeling, and visualization.
+- Uses **Logistic Regression**, a supervised machine learning algorithm.
+- Accuracy improved from **80.22%** to **99.82%** using Random Forest Algorithm.
+- Clean code for data processing and modeling.
 - Developed using **Python** and **Scikit-learn** libraries.
 
 ---
 
-## 📁 Repository Structure
-
-```
-ipl-prediction-/
-├── ipl.ipynb           # Main Jupyter notebook with code
-├── ipl_matches.csv     # IPL dataset used for training
-├── README.md           # Project documentation (this file)
-```
-
----
 
 ## 🔧 Tech Stack
 
-- Python 3.x
-- Pandas
-- NumPy
-- Scikit-learn
-- Matplotlib / Seaborn (for optional visualization)
-- Jupyter Notebook
+- Python 3.x  
+- Pandas  
+- NumPy  
+- Scikit-learn  
+- Google Collab
+
+> 🔹 *Visualization libraries like Seaborn and Matplotlib are not used in this project.*
 
 ---
 
 ## 📊 Dataset Information
 
-- Source: Kaggle or other open IPL datasets
-- Features:
-  - Batting and bowling teams
-  - City/venue
-  - Toss winner and decision
-  - Target score, current score, overs, and wickets remaining
+- **Source:** IPL datasets from 2008–2019 (matches and deliveries)
+- **Files:**
+   -Match-level information
+  – Ball-by-ball data
+- **Features used:**
+  - Batting team and Bowling team  
+  - City / Venue  
+  - Toss winner and decision  
+  - Target score, current score, overs completed, current rr, required rr.
 
 ---
 
 ## 🧠 Model Overview
 
-- **Model Used:** Logistic Regression
+- **Algorithm Used:** Logistic Regression , Random Forest
 - **Preprocessing Techniques:**
   - One-hot encoding for categorical variables
-  - Handling missing data
-  - Feature selection
-- **Evaluation Metric:** Accuracy
+  - Column Transformer 
+  - Handling missing/null data  
+  - Feature selection and transformation  
+- **Evaluation Metric:** Accuracy  
 
 ---
 
 ## 📈 Results
 
-- Final accuracy: **80.3%**
-- The model is able to provide the likelihood of a team winning during an ongoing match.
+- Initial accuracy: **80.22%**  
+- Final accuracy after optimization: **99.82%**  
+- The model effectively estimates the likelihood of a team winning during an ongoing match.
 
 ---
 
-## ▶️ How to Run
+## Google Collab Sample Link:
 
-### 1. Clone the repository
-```bash
-git clone https://github.com/Abhinav112005/ipl-prediction-.git
-cd ipl-prediction-
-```
-
-### 2. Install Dependencies
-If you have a `requirements.txt`:
-```bash
-pip install -r requirements.txt
-```
-
-Or install manually:
-```bash
-pip install pandas numpy scikit-learn matplotlib seaborn
-```
-
-### 3. Run the Notebook
-```bash
-jupyter notebook ipl.ipynb
-```
+🌐 [Sample Link](https://colab.research.google.com/drive/1a1bUii33ldQRyixi9eBTSLJ_31Swgq1R#scrollTo=mG0Vo5jQpddd)
 
 ---
-
+  
 ## 📚 Acknowledgement
 
-- Project developed under the supervision of **Prof. Dr. Mansi Gyanchandani**, NIT Bhopal.
-- Dataset inspired by IPL historical match records.
+- Project developed under the supervision of **Prof. Dr. Mansi Gyanchandani**, NIT Bhopal.  
+- Dataset inspired by IPL historical records (2008–2019).
 
 ---
 
